@@ -130,9 +130,10 @@ Then, your fork URL should look like `https://github.com/<your-github-username>/
 
 We'll refer to this URL as `<your-fork-url>`.
 
-Find [`<your-github-username>`](#your-github-username) if you don't know it.
+See also:
 
-See also [`<repo-name>`](#repo-name).
+- [`<your-github-username>`](#your-github-username)
+- [`<repo-name>`](#repo-name).
 
 ### Go to your fork
 
