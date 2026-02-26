@@ -293,10 +293,15 @@ Method 2:
 
 ### Check the current shell in the `VS Code Terminal`
 
-1. [Open the `VS Code Terminal`](#open-the-vs-code-terminal)
-2. Look at the [`Panel Toolbar`](#panel-toolbar).
+1. [Open the `VS Code Terminal`](#open-the-vs-code-terminal).
+2. Look at:
+   - the [`Panel Toolbar`](#panel-toolbar):
 
-   <img alt="Current Terminal Shell" src="./images/vs-code/terminal-single-current-shell-bash.png" style="width:400px"></img>
+      <img alt="Current Terminal Shell" src="./images/vs-code/terminal-single-current-shell-bash.png" style="width:300px"></img>
+
+   - or, at the current (highlighted) `VS Code Terminal`:
+
+      <img alt="Terminals" src="./images/vs-code/terminal-current-terminal.png" style="width:300px"></img>
 
    You should see on:
    - `Windows`: `bash`;
