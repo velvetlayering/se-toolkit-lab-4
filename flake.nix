@@ -24,13 +24,13 @@
               export ROOT_DIR="$(pwd)"
             '';
             commandGroups = {
-              front-tools = [
+              "1-front-tools" = [
                 pkgs.nodejs_22
               ];
-              back-tools = [
+              "2-back-tools" = [
                 pkgs.uv
               ];
-              lint = [
+              "3-lint-scripts" = [
                 {
                   name = "find-broken-links";
                   command = ''
@@ -57,7 +57,7 @@
                   help = "Lint all Markdown files";
                 }
               ];
-              tools = [
+              "4-lint-tools" = [
                 pkgs.lychee
               ];
             };
