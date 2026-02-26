@@ -26,7 +26,6 @@
   - [Copy text inside the `VS Code Terminal`](#copy-text-inside-the-vs-code-terminal)
   - [Paste text inside the `VS Code Terminal`](#paste-text-inside-the-vs-code-terminal)
   - [Check the current shell in the `VS Code Terminal`](#check-the-current-shell-in-the-vs-code-terminal)
-  - [(`Windows` only) Set up running `VS Code` in `WSL`](#windows-only-set-up-running-vs-code-in-wsl)
   - [(`Windows` only) Set the default shell for the `VS Code Terminal`](#windows-only-set-the-default-shell-for-the-vs-code-terminal)
   - [Run a command using the `VS Code Terminal`](#run-a-command-using-the-vs-code-terminal)
 - [`Explorer`](#explorer)
@@ -60,6 +59,8 @@
   - [Docs on hover](#docs-on-hover)
   - [Go to the definition](#go-to-the-definition)
   - [Rename a symbol](#rename-a-symbol)
+- [Set up `VS Code`](#set-up-vs-code)
+  - [(`Windows` only) Set up running `VS Code` in `WSL`](#windows-only-set-up-running-vs-code-in-wsl)
 
 > [!IMPORTANT]
 > The first [keyboard shortcut](#keyboard-shortcuts) is always for `Linux`.
@@ -289,30 +290,6 @@ Method 2:
 
      If you see something else, [set the default shell](#windows-only-set-the-default-shell-for-the-vs-code-terminal).
    - `macOS`, `Linux`: `zsh`, `bash`, or another [shell](./shell.md#shell-variants) name;
-
-### (`Windows` only) Set up running `VS Code` in `WSL`
-
-<img alt="VS Code and WSL" src="./images/vs-code/vs-code-wsl.png" style="width:400px"></img>
-
-[image source](https://code.visualstudio.com/docs/remote/wsl)
-
-Steps:
-
-1. [Enable `WSL`](https://code.visualstudio.com/docs/remote/wsl-tutorial#_enable-wsl).
-2. Open `VS Code`.
-3. [Install the extension](./vs-code.md#extensions):
-   [`ms-vscode-remote.remote-wsl`](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl).
-
-   It lets you use `WSL` in `VS Code`.
-4. [Run using the `VS Code Terminal`](./vs-code.md#run-a-command-using-the-vs-code-terminal):
-
-   ```terminal
-   wsl --install -d Ubuntu-24.04
-   ```
-
-   **Note:** [`Ubuntu`](./linux.md#ubuntu) is a [`Linux` distro](./linux.md#ubuntu).
-
-5. Open `VS Code` again.
 
 ### (`Windows` only) Set the default shell for the `VS Code Terminal`
 
@@ -613,3 +590,29 @@ Method 2:
 ### Go to the definition
 
 ### Rename a symbol
+## Set up `VS Code`
+
+### (`Windows` only) Set up running `VS Code` in `WSL`
+
+<img alt="VS Code and WSL" src="./images/vs-code/vs-code-wsl.png" style="width:400px"></img>
+
+[image source](https://code.visualstudio.com/docs/remote/wsl)
+
+Steps:
+
+1. [Enable `WSL`](https://code.visualstudio.com/docs/remote/wsl-tutorial#_enable-wsl).
+2. Open `VS Code`.
+3. [Install the extension](./vs-code.md#extensions):
+   [`ms-vscode-remote.remote-wsl`](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl).
+
+   It lets you use `WSL` in `VS Code`.
+4. [Run using the `VS Code Terminal`](./vs-code.md#run-a-command-using-the-vs-code-terminal):
+
+   ```terminal
+   wsl --install -d Ubuntu-24.04
+   ```
+
+   **Note:** [`Ubuntu`](./linux.md#ubuntu) is a [`Linux` distro](./linux.md#ubuntu).
+
+5. Open `VS Code` again.
+
