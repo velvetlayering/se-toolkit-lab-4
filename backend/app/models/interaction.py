@@ -2,12 +2,11 @@
 
 from datetime import datetime
 
-from sqlmodel import Field, SQLModel
-
 # Ensure referenced FK target tables are registered in SQLModel metadata
 # whenever InteractionLog is imported.
 from app.models.item import ItemRecord  # noqa: F401
 from app.models.learner import Learner  # noqa: F401
+from sqlmodel import Field, SQLModel
 
 
 class InteractionLog(SQLModel, table=True):
@@ -37,4 +36,4 @@ class InteractionModel(SQLModel):
     learner_id: int
     item_id: int
     kind: str
-    timestamp: datetime
+    created_at: datetime
