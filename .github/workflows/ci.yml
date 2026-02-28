@@ -31,5 +31,7 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/se-toolkit-lab:${{ github.sha }} .
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/se-toolkit-lab:${{ github.sha }}
+          docker build -t $$   {{ secrets.DOCKER_USERNAME }}/se-toolkit-lab:   $${{ github.sha }} .
+          docker tag $$   {{ secrets.DOCKER_USERNAME }}/se-toolkit-lab:   $${{ github.sha }} ${{ secrets.DOCKERHUB_USERNAME }}/se-toolkit-lab:latest
+          docker push $$   {{ secrets.DOCKERHUB_USERNAME }}/se-toolkit-lab:   $${{ github.sha }}
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/se-toolkit-lab:latest
